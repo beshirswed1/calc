@@ -15,19 +15,19 @@ function validateForm(event) {
         errorName.textContent = '';
     }
 
-    // البريد الإلكتروني
-    const email = document.getElementById('input-email').value.trim();
-    const errorEmail = document.getElementById('error-email');
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        errorEmail.textContent = 'الايميل غير صحيح مينفش ياقلبي';
-        valid = false;
-    } else if (email.length > 30) {
-        errorEmail.textContent = 'الايميل كبير مينفش ياقلبي';
-        valid = false;
-    } else {
-        errorEmail.textContent = '';
-    }
+const email = document.getElementById('input-email').value.trim();
+const errorEmail = document.getElementById('error-email');
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (email.length > 30) {
+    errorEmail.textContent = 'الايميل كبير مينفش ياقلبي';
+    valid = false;
+} else if (!emailRegex.test(email)) {
+    errorEmail.textContent = 'الايميل غير صحيح مينفش ياقلبي';
+    valid = false;
+} else {
+    errorEmail.textContent = '';
+}
 
     // رقم الهاتف
     const phone = document.getElementById('input-phone').value.trim();
