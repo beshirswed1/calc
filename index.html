@@ -1,0 +1,77 @@
+    <!DOCTYPE html>
+    <html lang="ar" dir="rtl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+        font-family: 'Cairo', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.8;
+        padding: 20px;
+        }
+    </style>
+    </head>
+
+    <body>
+    <div class="wrapper" id="wrapper">
+        <form action="./calculator/index.html" method="post" id="form" onsubmit="validateForm(event)">
+        <h1>إنشاء حساب جديد</h1>
+
+        <div class="input-box">
+            <input type="text" id="input-name" placeholder="الاسم الكامل" required>
+            <span class="error" id="error-name"></span>
+            <i class="bx bx-user bx-breathe " ></i>
+        </div>
+
+        <div class="input-box">
+            <input type="email" id="input-email" placeholder="البريد الإلكتروني" required>
+            <span class="error" id="error-email"></span>
+            <i class='bx bx-envelope'></i>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="input-phone" placeholder="رقم الهاتف" required>
+            <span class="error" id="error-phone"></span>
+            <i class="bx bx-phone bx-tada " ></i>
+        </div>
+        
+        <div class="input-box">
+            <input type="month" id="input-month" placeholder="اختر الشهر" required>
+            <span class="error" id="error-month"></span>
+        </div>
+
+        <div class="input-box">
+            <input type="number" id="input-day" placeholder="اختر اليوم" min="1" max="31" required>
+            <span class="error" id="error-day"></span>
+        </div>
+
+        <div class="input-box">
+            <input type="number" id="input-year" placeholder="اختر السنة" min="1900" max="2100" required>
+            <span class="error" id="error-year"></span>
+        </div>
+        <div class="input-box">
+            <input type="password" id="input-pass" placeholder="كلمة المرور" required>
+            <span class="error" id="error-pass"></span>
+            <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <div class="input-box">
+            <input type="password" id="input-n-pass" placeholder="تأكيد كلمة المرور" required>
+            <span class="error" id="error-n-pass"></span>
+            <i class='bx bx-lock-open-alt'></i>
+        </div>
+
+        <button type="submit" id="input-" class="btn">سجّل الآن</button>
+
+        </form>
+    </div>
+    <script src="./script/script.js"></script>
+    </body>
+    </html>

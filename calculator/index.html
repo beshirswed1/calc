@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>calc</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="" id="calculator_container">
+
+<div id="display_area">
+
+
+</div>
+
+<div class="calculator_row">
+
+    <button>C</button>
+
+    <button>(</button>
+
+    <button>)</button>
+
+    <button>/</button></div>
+
+<div class="calculator_row">
+
+    <button>7</button>
+
+    <button>8</button>
+
+    <button>9</button>
+
+    <button>*</button></div>
+
+<div class="calculator_row">
+
+    <button>4</button>
+
+    <button>5</button>
+
+    <button>6</button>
+
+    <button>-</button></div>
+
+<div class="calculator_row">
+
+    <button>1</button>
+
+    <button>2</button>
+
+    <button>3</button>
+
+    <button>+</button></div>
+
+<div class="calculator_row">
+
+    <button>DEL</button>
+
+    <button>0</button>
+    <button>.</button>
+
+    <button>=</button></div>
+
+
+
+    </div>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.13.0/math.min.js" integrity="sha512-8oDmFp9c9z1K9E+6R+6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6yO6yO+6y极客时间" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.6.0/math.js" integrity="sha512-UuQC26OPo7O/ZQ67xAOTzBlQXFaSsJpguqrs+nFJL2GFG2+9Gm1RZzBTvEyM9aBy+cOzlJ4eNX0m2IGv2oPu1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="mean.js"></script>
+
+</body>
